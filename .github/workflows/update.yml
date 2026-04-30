@@ -1,0 +1,47 @@
+name: Update Stundenplan
+
+on:
+  schedule:
+    # 17:00 UTC = 18:00 CET (Winterzeit) / 19:00 CEST (Sommerzeit).
+    # GitHub-Cron kennt keine Zeitzonen, daher feste UTC-Zeit.
+    - cron: '0 17 * * *'
+  workflow_dispatch:  # manuell ausloesbar
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 icalendar
+
+      - name: Fetch Stundenplan → JSON
+        run: python scripts/ehb_stundenplan_fetch.py --out tmp/ehb_events.json
+
+      - name: JSON → ICS Feeds
+        run: python scripts/ehb_stundenplan_to_ics.py --json tmp/ehb_events.json --out docs/ics --semester 4
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ics
+          if git diff --staged --quiet; then
+            echo "Keine Aenderungen am Stundenplan."
+          else
+            git commit -m "chore: auto-update Stundenplan $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EHB Hebammen Stundenplan 4. Semester – Kalender-Abo</title>
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --fg: #2a2a2a;
+      --muted: #6b6b6b;
+      --accent: #6b4a8f;
+      --accent-hover: #553876;
+      --card: #ffffff;
+      --border: #e5e0d8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.55;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; }
+    h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
+    .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+    h2 { font-size: 1.05rem; margin: 1.8rem 0 .7rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chip {
+      display: inline-block;
+      padding: .55rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      cursor: pointer;
+      font-size: .95rem;
+      user-select: none;
+      transition: all .15s;
+    }
+    .chip:hover { border-color: var(--accent); }
+    .chip.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    .result {
+      margin-top: 1.5rem;
+      padding: 1.2rem;
+      background: #f3eff8;
+      border: 1px solid #d9ccea;
+      border-radius: 10px;
+      display: none;
+    }
+    .result.show { display: block; }
+    .result h3 {
+      margin: 0 0 .6rem;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+    .feed {
+      margin: .8rem 0;
+      padding: .7rem .9rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-size: .9rem;
+    }
+    .feed-label { font-weight: 600; margin-bottom: .3rem; }
+    .feed-url {
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-size: .78rem;
+      color: var(--muted);
+      word-break: break-all;
+      margin-bottom: .5rem;
+    }
+    .btns { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: .45rem .9rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: .85rem;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn.secondary {
+      background: white;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+    details { margin-top: 2rem; }
+    summary { cursor: pointer; font-weight: 600; padding: .5rem 0; }
+    details p, details li { font-size: .92rem; color: var(--muted); }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: .82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>EHB Hebammen 4. Semester &mdash; Stundenplan-Abo</h1>
+    <p class="sub">Wähle deine Gruppen &mdash; du bekommst zwei Kalender-Feeds, die sich automatisch aktualisieren, wenn der Stundenplan online aktualisiert wird.</p>
+
+    <div class="card">
+      <h2>1. Wähle deine Großgruppe</h2>
+      <div class="chips" id="gross">
+        <span class="chip" data-gross="a">Gruppe A</span>
+        <span class="chip" data-gross="b">Gruppe B</span>
+        <span class="chip" data-gross="c">Gruppe C</span>
+        <span class="chip" data-gross="d">Gruppe D</span>
+      </div>
+
+      <h2>2. Wähle deine Kleingruppe</h2>
+      <div class="chips" id="klein">
+        <span class="chip" data-klein="1a">1a</span>
+        <span class="chip" data-klein="1b">1b</span>
+        <span class="chip" data-klein="2a">2a</span>
+        <span class="chip" data-klein="2b">2b</span>
+        <span class="chip" data-klein="3a">3a</span>
+        <span class="chip" data-klein="3b">3b</span>
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      <h3>Deine Feeds</h3>
+      <div class="feed" id="feed-gross">
+        <div class="feed-label"></div>
+        <div class="feed-url"></div>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener">Abonnieren</a>
+          <button class="btn secondary" onclick="copy(this)">URL kopieren</button>
+        </div>
+      </div>
+      <div class="feed" id="feed-klein">
+        <div class="feed-label"></div>
+        <div class="feed-url"></div>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener">Abonnieren</a>
+          <button class="btn secondary" onclick="copy(this)">URL kopieren</button>
+        </div>
+      </div>
+    </div>
+
+    <details>
+      <summary>So abonnierst du den Kalender</summary>
+      <p><strong>iPhone / iPad:</strong> Tippe auf „Abonnieren". iOS öffnet einen Dialog, mit dem du den Kalender direkt hinzufügen kannst.</p>
+      <p><strong>Google Kalender:</strong> URL kopieren &rarr; calendar.google.com &rarr; links auf „+ Weitere Kalender" &rarr; „Per URL" &rarr; URL einfügen. Google aktualisiert abonnierte Kalender etwa alle 12&ndash;24 Stunden.</p>
+      <p><strong>Apple Kalender (Mac):</strong> Datei &rarr; Neues Kalenderabo &rarr; URL einfügen. Aktualisierungs-Intervall kannst du auf 5 Minuten stellen.</p>
+      <p><strong>Outlook:</strong> Kalender hinzufügen &rarr; Aus dem Internet abonnieren &rarr; URL einfügen.</p>
+    </details>
+
+    <details>
+      <summary>Wie funktioniert die Aktualisierung?</summary>
+      <p>Einmal täglich wird der HTML-Stundenplan der EHB automatisch abgerufen und in ICS-Dateien umgewandelt. Wenn sich Termine ändern (neue Räume, verschobene Stunden, entfallene Termine), übernimmt dein Kalender-App die Änderungen automatisch beim nächsten Polling.</p>
+      <p>Events haben stabile IDs &mdash; Updates überschreiben das alte Event, statt Duplikate zu erzeugen.</p>
+    </details>
+
+    <details>
+      <summary>Warum zwei Feeds?</summary>
+      <p>Es gibt zwei unabhängige Gruppen-Einteilungen: <strong>Großgruppen A&ndash;D</strong> und <strong>Kleingruppen 1a&ndash;3b</strong>. Der Großgruppen-Feed enthält bereits alle Plenum-Termine (für alle Studierenden), dein Kleingruppen-Feed nur die zusätzlichen Termine deiner Kleingruppe. So hast du keine Duplikate.</p>
+    </details>
+
+    <footer>
+      Quelle: <a href="https://www.eh-berlin.de/stundenplan/Studierende/HTML/H_4_H4.html" target="_blank">eh-berlin.de Stundenplan H 4. Semester</a><br>
+      Inoffiziell, automatisch generiert &middot; <a href="https://github.com/gina-gruenhage/ehb-stundenplan-s4">Quellcode auf GitHub</a>
+    </footer>
+  </div>
+
+  <script>
+    const base = location.origin + location.pathname.replace(/index\.html$/, '') + 'ics/';
+    let sel = { gross: null, klein: null };
+
+    document.querySelectorAll('#gross .chip').forEach(c => {
+      c.onclick = () => {
+        document.querySelectorAll('#gross .chip').forEach(x => x.classList.remove('active'));
+        c.classList.add('active');
+        sel.gross = c.dataset.gross;
+        render();
+      };
+    });
+    document.querySelectorAll('#klein .chip').forEach(c => {
+      c.onclick = () => {
+        document.querySelectorAll('#klein .chip').forEach(x => x.classList.remove('active'));
+        c.classList.add('active');
+        sel.klein = c.dataset.klein;
+        render();
+      };
+    });
+
+    function render() {
+      const result = document.getElementById('result');
+      if (!sel.gross && !sel.klein) { result.classList.remove('show'); return; }
+      result.classList.add('show');
+
+      updateFeed('feed-gross', sel.gross,
+        sel.gross ? `Plenum & ${sel.gross.toUpperCase()}` : null,
+        sel.gross ? `gross-${sel.gross}.ics` : null);
+      updateFeed('feed-klein', sel.klein,
+        sel.klein ? `Kleingruppe ${sel.klein}` : null,
+        sel.klein ? `klein-${sel.klein}.ics` : null);
+    }
+
+    function updateFeed(id, active, label, filename) {
+      const el = document.getElementById(id);
+      if (!active) { el.style.display = 'none'; return; }
+      el.style.display = 'block';
+      const url = base + filename;
+      const webcal = url.replace(/^https?:/, 'webcal:');
+      el.querySelector('.feed-label').textContent = label;
+      el.querySelector('.feed-url').textContent = url;
+      el.querySelector('a.btn').href = webcal;
+    }
+
+    function copy(btn) {
+      const url = btn.closest('.feed').querySelector('.feed-url').textContent;
+      navigator.clipboard.writeText(url).then(() => {
+        const old = btn.textContent;
+        btn.textContent = 'Kopiert!';
+        setTimeout(() => btn.textContent = old, 1500);
+      });
+    }
+  </script>
+</body>
+</html>
