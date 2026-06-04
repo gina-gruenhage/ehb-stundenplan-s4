@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:[1b] V HW 4.11.2 Krisen u. Konflikte bew.
 DTSTART;TZID=Europe/Berlin:20260422T123000
 DTEND;TZID=Europe/Berlin:20260422T154500
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:3928730812b3fbea@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 1b [3]\
  nModul: 84-993-20212-4110-V2\nGruppe: 1b
@@ -19,7 +19,7 @@ SUMMARY:[1b] V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsve
  rlauf
 DTSTART;TZID=Europe/Berlin:20260504T083000
 DTEND;TZID=Europe/Berlin:20260504T114500
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:854a6acc54598af5@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nDiagnostik u. Therapie b. Abweichungen v. regel
  r. Geburtsverlauf Gruppe 1b [1]\nModul: 84-993-20212-4090-V1\nGruppe: 1b
@@ -29,7 +29,7 @@ BEGIN:VEVENT
 SUMMARY:[1b] V HW 4.9.3 Diag. u. Therapie perip. Risiken
 DTSTART;TZID=Europe/Berlin:20260505T141500
 DTEND;TZID=Europe/Berlin:20260505T173000
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:9bcb405f84fca761@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Gruppe 1b [1]\nModul: 84-993-20212-4090-V3\nGruppe: 1b
@@ -39,7 +39,7 @@ BEGIN:VEVENT
 SUMMARY:[1b] V HW 4.10.6 Beratung zu Sex. u. Familienpl.
 DTSTART;TZID=Europe/Berlin:20260616T133000
 DTEND;TZID=Europe/Berlin:20260616T164500
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:fdcadcf52c56bfba@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Gru
  ppe 1b [5]\nModul: 84-993-20212-4100-V6\nGruppe: 1b
@@ -49,7 +49,7 @@ BEGIN:VEVENT
 SUMMARY:[1b] V HW 4.10.5 Kommunik. u. Beratung
 DTSTART;TZID=Europe/Berlin:20260623T101500
 DTEND;TZID=Europe/Berlin:20260623T114500
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:f8e23e144914c8de@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 1b [4]\nModul: 84-993-20212-4100-V5\nGruppe: 1b
@@ -59,7 +59,7 @@ BEGIN:VEVENT
 SUMMARY:[1b] V HW 4.10.5 Kommunik. u. Beratung
 DTSTART;TZID=Europe/Berlin:20260623T123000
 DTEND;TZID=Europe/Berlin:20260623T141500
-DTSTAMP:20260603T000000Z
+DTSTAMP:20260604T000000Z
 UID:bd3602e33f85de77@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 1b [4]\nModul: 84-993-20212-4100-V5\nGruppe: 1b
