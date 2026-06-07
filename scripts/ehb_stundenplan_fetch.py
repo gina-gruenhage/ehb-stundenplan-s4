@@ -62,6 +62,16 @@ def fetch_html(url: str) -> str:
     for attempt in range(3):
         try:
             r = requests.get(url, timeout=30, headers=BROWSER_HEADERS)
+            if r.status_code >= 400:
+                # Block-Body fuer Debug ausgeben (z.B. WAF-Reason bei 415).
+                print(
+                    f"[ehb] HTTP {r.status_code} response headers: {dict(r.headers)}",
+                    file=sys.stderr,
+                )
+                print(
+                    f"[ehb] HTTP {r.status_code} body (first 500): {r.text[:500]!r}",
+                    file=sys.stderr,
+                )
             r.raise_for_status()
             r.encoding = r.apparent_encoding or "utf-8"
             return r.text
