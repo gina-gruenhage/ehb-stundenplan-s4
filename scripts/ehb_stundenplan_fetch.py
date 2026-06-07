@@ -28,6 +28,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from datetime import date
 from pathlib import Path
 
@@ -36,6 +37,14 @@ from bs4 import BeautifulSoup, Tag
 
 DEFAULT_URL = "https://www.eh-berlin.de/stundenplan/Studierende/HTML/H_4_H4.html"
 DEFAULT_OUT = Path("tmp/ehb_events.json")
+
+# Default python-requests Header werden vom EHB-Edge mit 415 abgewiesen,
+# wenn die Anfrage von einer Cloud-IP (z.B. GitHub-Actions-Runner) kommt.
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
+}
 
 GROUP_RE = re.compile(r"(?:Gr\.?|Gruppe)\s*([A-D]|[1-3][ab])", re.IGNORECASE)
 # Eine Zeile, die nur Gruppen-Marker enthaelt (z.B. "Gr. A", "Gr. 1a, Gr. 1b")
@@ -49,10 +58,19 @@ MODUL_CODE_RE = re.compile(r"\d{2}-\d{3}-\d{5}-\d{4}-[A-Z]\d+")
 
 
 def fetch_html(url: str) -> str:
-    r = requests.get(url, timeout=30)
-    r.raise_for_status()
-    r.encoding = r.apparent_encoding or "utf-8"
-    return r.text
+    last_exc: Exception | None = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=30, headers=BROWSER_HEADERS)
+            r.raise_for_status()
+            r.encoding = r.apparent_encoding or "utf-8"
+            return r.text
+        except requests.RequestException as exc:
+            last_exc = exc
+            if attempt < 2:
+                time.sleep(2 ** attempt)
+    assert last_exc is not None
+    raise last_exc
 
 
 def parse_date(text: str) -> str | None:
