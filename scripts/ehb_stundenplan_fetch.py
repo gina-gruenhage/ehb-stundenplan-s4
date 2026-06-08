@@ -320,6 +320,20 @@ def main() -> int:
 
     events = parse_all(html)
 
+    # Schutz gegen WAF-/Block-Seiten: Der EHB-Edge liefert Cloud-IPs
+    # (z.B. GitHub-Actions-Runner) teils HTTP 200 mit einer Seite OHNE
+    # Stundenplan-Tabelle. parse_all() findet dann 0 Events. Ein leerer
+    # Plan ist mitten im Semester nie legitim — hart abbrechen, damit der
+    # nachgelagerte ICS-Schritt die guten Kalender nicht mit leeren
+    # ueberschreibt und published.
+    if not args.html_file and not events:
+        print(
+            "[ehb] FEHLER: 0 Veranstaltungen geparst — vermutlich WAF-/Block-Seite "
+            "statt Stundenplan. Breche ab, ohne JSON zu schreiben.",
+            file=sys.stderr,
+        )
+        return 1
+
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
