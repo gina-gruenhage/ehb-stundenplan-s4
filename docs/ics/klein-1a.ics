@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:[1a] V HW 4.11.2 Krisen u. Konflikte bew.
 DTSTART;TZID=Europe/Berlin:20260421T123000
 DTEND;TZID=Europe/Berlin:20260421T154500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:54ed8ea32b8292d0@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 1a [2]\
  nModul: 84-993-20212-4110-V2\nGruppe: 1a
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:[1a] V HW 4.9.3 Diag. u. Therapie perip. Risiken
 DTSTART;TZID=Europe/Berlin:20260508T123000
 DTEND;TZID=Europe/Berlin:20260508T154500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:836bdfb693ba1838@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Gruppe 1a [8]\nModul: 84-993-20212-4090-V3\nGruppe: 1a
@@ -29,7 +29,7 @@ SUMMARY:[1a] V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsve
  rlauf
 DTSTART;TZID=Europe/Berlin:20260526T083000
 DTEND;TZID=Europe/Berlin:20260526T114500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:00e2e0b0357457b9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nDiagnostik u. Therapie b. Abweichungen v. regel
  r. Geburtsverlauf\nModul: 84-993-20212-4090-V1\nGruppe: 1a
@@ -39,7 +39,7 @@ BEGIN:VEVENT
 SUMMARY:[1a] V HW 4.10.5 Kommunik. u. Beratung
 DTSTART;TZID=Europe/Berlin:20260619T123000
 DTEND;TZID=Europe/Berlin:20260619T154500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:bb5a3c9392a290b3@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 1a [4]\nModul: 84-993-20212-4100-V5\nGruppe: 1a
@@ -49,7 +49,7 @@ BEGIN:VEVENT
 SUMMARY:[1a] V HW 4.10.6 Beratung zu Sex. u. Familienpl.
 DTSTART;TZID=Europe/Berlin:20260623T101500
 DTEND;TZID=Europe/Berlin:20260623T114500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:fda3e67ba6d4d2df@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Gru
  ppe 1a [5]\nModul: 84-993-20212-4100-V6\nGruppe: 1a
@@ -59,7 +59,7 @@ BEGIN:VEVENT
 SUMMARY:[1a] V HW 4.10.6 Beratung zu Sex. u. Familienpl.
 DTSTART;TZID=Europe/Berlin:20260623T123000
 DTEND;TZID=Europe/Berlin:20260623T141500
-DTSTAMP:20260713T000000Z
+DTSTAMP:20260714T000000Z
 UID:eec4df58a1e751fe@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Gru
  ppe 1a [5]\nModul: 84-993-20212-4100-V6\nGruppe: 1a
