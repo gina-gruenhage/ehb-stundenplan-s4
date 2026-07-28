@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:[3a] V HW 4.9.3 Diag. u. Therapie perip. Risiken
 DTSTART;TZID=Europe/Berlin:20260522T123000
 DTEND;TZID=Europe/Berlin:20260522T154500
-DTSTAMP:20260727T000000Z
+DTSTAMP:20260728T000000Z
 UID:ceaf4d153e6d8445@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Gruppe 3a [3]\nModul: 84-993-20212-4090-V3\nGruppe: 3a
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:[3a] V HW 4.10.6 Beratung zu Sex. u. Familienpl.
 DTSTART;TZID=Europe/Berlin:20260612T123000
 DTEND;TZID=Europe/Berlin:20260612T154500
-DTSTAMP:20260727T000000Z
+DTSTAMP:20260728T000000Z
 UID:02c36e8eec9fad90@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Gru
  ppe 3a [1]\nModul: 84-993-20212-4100-V6\nGruppe: 3a
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:[3a] V HW 4.11.2 Krisen u. Konflikte bew.
 DTSTART;TZID=Europe/Berlin:20260619T123000
 DTEND;TZID=Europe/Berlin:20260619T154500
-DTSTAMP:20260727T000000Z
+DTSTAMP:20260728T000000Z
 UID:968ed89faf57b63c@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen\nModul: 84-993
  -20212-4110-V2\nGruppe: 3a
@@ -39,7 +39,7 @@ SUMMARY:[3a] V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsve
  rlauf
 DTSTART;TZID=Europe/Berlin:20260623T123000
 DTEND;TZID=Europe/Berlin:20260623T154500
-DTSTAMP:20260727T000000Z
+DTSTAMP:20260728T000000Z
 UID:23ae031283fd7b43@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nDiagnostik u. Therapie b. Abweichungen v. regel
  r. Geburtsverlauf\nModul: 84-993-20212-4090-V1\nGruppe: 3a
@@ -49,7 +49,7 @@ BEGIN:VEVENT
 SUMMARY:[3a] V HW 4.10.5 Kommunik. u. Beratung
 DTSTART;TZID=Europe/Berlin:20260624T143000
 DTEND;TZID=Europe/Berlin:20260624T174500
-DTSTAMP:20260727T000000Z
+DTSTAMP:20260728T000000Z
 UID:885f36711199e5e5@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 3a [8]\nModul: 84-993-20212-4100-V5\nGruppe: 3a
