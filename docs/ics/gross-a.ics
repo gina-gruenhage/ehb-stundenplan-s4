@@ -8,7 +8,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260401T083000
 DTEND;TZID=Europe/Berlin:20260401T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:44aaa31b013be60a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260401T123000
 DTEND;TZID=Europe/Berlin:20260401T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:7384853e78636241@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nDiagnostik u. Therapie b. Ab
  weichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260402T083000
 DTEND;TZID=Europe/Berlin:20260402T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:d2e812063758c59d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -38,7 +38,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260402T123000
 DTEND;TZID=Europe/Berlin:20260402T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ca46a8cfaff6368b@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Vorl.\nModul: 
  84-993-20212-4110-V2
@@ -48,7 +48,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260407T083000
 DTEND;TZID=Europe/Berlin:20260407T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:daf17bf5d191ad0b@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Vorl.\nModul: 
  84-993-20212-4110-V2
@@ -58,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260407T123000
 DTEND;TZID=Europe/Berlin:20260407T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:7f49257ec5abcdde@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -68,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260408T083000
 DTEND;TZID=Europe/Berlin:20260408T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:de026ca84191a049@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -78,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260408T123000
 DTEND;TZID=Europe/Berlin:20260408T140000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:edb0228a63a67e5a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nDiagnostik u. Therapie b. Ab
  weichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:V HW P4 Praxisbegleitseminar Termin 1 + 2
 DTSTART;TZID=Europe/Berlin:20260409T083000
 DTEND;TZID=Europe/Berlin:20260409T091500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:31ff52d2b6a16d20@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nPraxisbegleitseminar Termin 1 + 2\nModul: 84-99
  3-20212-4110-V4
@@ -98,7 +98,7 @@ BEGIN:VEVENT
 SUMMARY:V HW P4 Praxisbegleitseminar Termin 1 + 2
 DTSTART;TZID=Europe/Berlin:20260409T093000
 DTEND;TZID=Europe/Berlin:20260409T160000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b1d6b23a17eb90ec@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\, Professorin Dr. Simon\nPraxisbegleitseminar Te
  rmin 1 + 2 Teil 1 [1]\nModul: 84-993-20212-4110-V4
@@ -108,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.6 Beratung zu Sex. u. Familienpl. Vorl.
 DTSTART;TZID=Europe/Berlin:20260410T083000
 DTEND;TZID=Europe/Berlin:20260410T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b66e331e465dc5a0@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Sem
  inar\nModul: 84-993-20212-4100-V6
@@ -118,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260410T123000
 DTEND;TZID=Europe/Berlin:20260410T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b0501550d2811610@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie b. Abw
  eichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260413T123000
 DTEND;TZID=Europe/Berlin:20260413T140000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:4422f6e569aae7bc@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden d. Heba
  mmenforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -138,7 +138,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260413T141500
 DTEND;TZID=Europe/Berlin:20260413T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:7522863494e0925f@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Freifrau von Godin\nDiagnostik u. Therapie peripartale
  r Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -149,7 +149,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260414T083000
 DTEND;TZID=Europe/Berlin:20260414T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:7735ed7de4f329fd@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -159,7 +159,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260414T123000
 DTEND;TZID=Europe/Berlin:20260414T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:d38e507d7f8c46f8@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nDiagnostik u. Therapie b. Ab
  weichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -169,7 +169,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260415T083000
 DTEND;TZID=Europe/Berlin:20260415T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:6888f7bc739ad8ce@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -179,7 +179,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260415T123000
 DTEND;TZID=Europe/Berlin:20260415T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:2a36309d62cf960a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nDiagnostik u. Therapie b. Ab
  weichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -190,7 +190,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260416T083000
 DTEND;TZID=Europe/Berlin:20260416T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:a51d492abced77b8@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -201,7 +201,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260416T123000
 DTEND;TZID=Europe/Berlin:20260416T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:80ea99d3e2106d99@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -211,7 +211,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260417T083000
 DTEND;TZID=Europe/Berlin:20260417T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:3888bc00073f7182@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie peripa
  rtaler Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -221,7 +221,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260417T123000
 DTEND;TZID=Europe/Berlin:20260417T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:de7f5af748220cf5@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie b. Abw
  eichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -231,7 +231,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260420T083000
 DTEND;TZID=Europe/Berlin:20260420T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:50e3af1d7c3dfd69@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden d. Heba
  mmenforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -242,7 +242,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260420T123000
 DTEND;TZID=Europe/Berlin:20260420T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ef73744271cf0a62@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -253,7 +253,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260421T083000
 DTEND;TZID=Europe/Berlin:20260421T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:80fa4b7b2d784601@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -263,7 +263,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260422T083000
 DTEND;TZID=Europe/Berlin:20260422T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:79a41f68ec738a12@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -274,7 +274,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260423T083000
 DTEND;TZID=Europe/Berlin:20260423T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:82489ffaffe175e9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar Fachtagung im Audimax [1]\nModul: 84-9
@@ -286,7 +286,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260423T123000
 DTEND;TZID=Europe/Berlin:20260423T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:21dec1268dd781de@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar Fachtagung im Audimax [1]\nModul: 84-9
@@ -297,7 +297,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260424T083000
 DTEND;TZID=Europe/Berlin:20260424T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:d94e2d2a0aab0f48@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Pietsch\nBWL\, Marketing und Öffentlichkeitsarbeit Se
  minar\nModul: 84-993-20212-4100-V3
@@ -307,7 +307,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260424T123000
 DTEND;TZID=Europe/Berlin:20260424T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:78d25aed8dc3c2f1@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Pietsch\nBWL\, Marketing und Öffentlichkeitsarbeit Se
  minar\nModul: 84-993-20212-4100-V3
@@ -317,7 +317,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260427T101500
 DTEND;TZID=Europe/Berlin:20260427T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:148276aa2d17c09e@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -327,7 +327,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260427T141500
 DTEND;TZID=Europe/Berlin:20260427T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:893c196fcc457b5c@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -337,7 +337,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260428T101500
 DTEND;TZID=Europe/Berlin:20260428T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:74f4c4930a7d8588@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -347,7 +347,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.5 Kommunik. u. Beratung Vorl.
 DTSTART;TZID=Europe/Berlin:20260428T141500
 DTEND;TZID=Europe/Berlin:20260428T174500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:87b6045f9b05ded6@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Seminar\nModul: 84-993-20212-4100-V5
@@ -357,7 +357,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260429T083000
 DTEND;TZID=Europe/Berlin:20260429T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:95b060d676d93c4f@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -367,7 +367,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260430T083000
 DTEND;TZID=Europe/Berlin:20260430T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:1531918c268601c0@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie peripa
  rtaler Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -377,7 +377,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260430T123000
 DTEND;TZID=Europe/Berlin:20260430T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b0163c7f9b4998cc@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nTheorien u. Methoden d. Hebamme
  nforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -387,7 +387,7 @@ BEGIN:VEVENT
 SUMMARY:[A] V HW 4.10.9 Theorie-Praxis-Transfer/Supervision
 DTSTART;TZID=Europe/Berlin:20260504T123000
 DTEND;TZID=Europe/Berlin:20260504T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:989a8e286bf29324@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Faensen\nTheorie-Praxis-Transfer Supervision Seminar G
  ruppe A [5]\nModul: 84-993-20212-4100-V9\nGruppe: A
@@ -397,7 +397,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260505T101500
 DTEND;TZID=Europe/Berlin:20260505T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:8382210d6423795d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -407,7 +407,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260506T083000
 DTEND;TZID=Europe/Berlin:20260506T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:3130b16bcb5f1b33@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -418,7 +418,7 @@ SUMMARY:V HW 4.10.1 Arbeitsorg. u. Qualitätsmanag. i. d. Hebammentätigk.
   Vorl.
 DTSTART;TZID=Europe/Berlin:20260506T123000
 DTEND;TZID=Europe/Berlin:20260506T140000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b166a104647d197a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nArbeitsorganisation u. Qualitätsmanageme
  nt i. d. Hebammentätigkeit Seminar\nModul: 84-993-20212-4100-V1
@@ -428,7 +428,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260506T141500
 DTEND;TZID=Europe/Berlin:20260506T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ed67f772fc801018@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden d. Heba
  mmenforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -438,7 +438,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260507T083000
 DTEND;TZID=Europe/Berlin:20260507T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:bfe8c2b8ef442d6d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Sautter\, Simon\nKrisen u. Konflikte bewältigen Vorl.
  \nModul: 84-993-20212-4110-V2
@@ -448,7 +448,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260507T123000
 DTEND;TZID=Europe/Berlin:20260507T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:6f689d5c62302e68@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Sautter\, Simon\nKrisen u. Konflikte bewältigen Vorl.
  \nModul: 84-993-20212-4110-V2
@@ -458,7 +458,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260511T101500
 DTEND;TZID=Europe/Berlin:20260511T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:40bd85f925a1815d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -468,7 +468,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260511T143000
 DTEND;TZID=Europe/Berlin:20260511T174500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:455b53aa88d56655@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBWL\, Marketing und Öffentlichkeitsarbeit Semi
  nar\nModul: 84-993-20212-4100-V3
@@ -478,7 +478,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260512T101500
 DTEND;TZID=Europe/Berlin:20260512T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:0ac6680cb894321e@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -488,7 +488,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.5 Kommunik. u. Beratung Vorl.
 DTSTART;TZID=Europe/Berlin:20260512T141500
 DTEND;TZID=Europe/Berlin:20260512T174500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:7c377f39136784f9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Seminar\nModul: 84-993-20212-4100-V5
@@ -498,7 +498,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260513T083000
 DTEND;TZID=Europe/Berlin:20260513T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:1b0ac4029d2a9011@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -508,7 +508,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260515T123000
 DTEND;TZID=Europe/Berlin:20260515T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:1f9180614908908a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBWL\, Marketing und Öffentlichkeitsarbeit Semi
  nar\nModul: 84-993-20212-4100-V3
@@ -518,7 +518,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260518T101500
 DTEND;TZID=Europe/Berlin:20260518T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:4afce32fed85aded@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -528,7 +528,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.5 Kommunik. u. Beratung Vorl.
 DTSTART;TZID=Europe/Berlin:20260518T141500
 DTEND;TZID=Europe/Berlin:20260518T164500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:591b0c79ae40d6b5@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Seminar\nModul: 84-993-20212-4100-V5
@@ -538,7 +538,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260519T083000
 DTEND;TZID=Europe/Berlin:20260519T100000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:371f4ce1154d1ff9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBWL\, Marketing und Öffentlichkeitsarbeit Semi
  nar\nModul: 84-993-20212-4100-V3
@@ -548,7 +548,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.2 Vetrags- u. Haftungsrecht Vorl.
 DTSTART;TZID=Europe/Berlin:20260519T101500
 DTEND;TZID=Europe/Berlin:20260519T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:c9491cf5a5103d27@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nVertrags- und Haftungsrecht Semina
  r\nModul: 84-993-20212-4100-V2
@@ -558,7 +558,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260520T123000
 DTEND;TZID=Europe/Berlin:20260520T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:210a1b54736b005d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nTheorien u. Methoden d. Hebamme
  nforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -569,7 +569,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260521T083000
 DTEND;TZID=Europe/Berlin:20260521T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:2c4d1fefb5d77a5b@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nAkteure\, Prozesse\, Struktur
  en u. Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4
@@ -580,7 +580,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260521T123000
 DTEND;TZID=Europe/Berlin:20260521T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:65da718ba28ff9a6@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBWL\, Marketing und Öffentlichkeitsarbei
  t Seminar\nModul: 84-993-20212-4100-V3
@@ -590,7 +590,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.3 Berufsethik u. ethische Entscheidungsf. Vorl.
 DTSTART;TZID=Europe/Berlin:20260526T123000
 DTEND;TZID=Europe/Berlin:20260526T150000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ec3091ab0766f0ab@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nBerufsethik u. ethisc
  he Entscheidungsfindung Seminar\nModul: 84-993-20212-4110-V3
@@ -601,7 +601,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260527T083000
 DTEND;TZID=Europe/Berlin:20260527T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b4288d9ae75544bf@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nAkteure\, Prozesse\, Struktur
  en u. Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4
@@ -612,7 +612,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.1 Diag. u. Therapie b. Abweich. v. regelr. Geburtsverlauf
 DTSTART;TZID=Europe/Berlin:20260527T123000
 DTEND;TZID=Europe/Berlin:20260527T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:802e8cbc7a3f3972@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie b. Abw
  eichungen v. regelr. Geburtsverlauf\nModul: 84-993-20212-4090-V1
@@ -622,7 +622,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260528T083000
 DTEND;TZID=Europe/Berlin:20260528T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:3c0d75926acabe76@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -632,7 +632,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260528T123000
 DTEND;TZID=Europe/Berlin:20260528T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:def3466ad8c0747d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBWL\, Marketing und Öffentlichkeitsarbei
  t Seminar\nModul: 84-993-20212-4100-V3
@@ -643,7 +643,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260529T083000
 DTEND;TZID=Europe/Berlin:20260529T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:dad49eac61e7a95e@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nAkteure\, Prozesse\, Struktur
  en u. Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4
@@ -654,7 +654,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.7 Berufsgeschichte Vorl.
 DTSTART;TZID=Europe/Berlin:20260529T123000
 DTEND;TZID=Europe/Berlin:20260529T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:e4804d349c8f467e@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBerufsgeschichte Seminar\nModul: 84-993-2
  0212-4100-V7
@@ -665,7 +665,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260601T101500
 DTEND;TZID=Europe/Berlin:20260601T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:715b7448a576b0fa@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nAkteure\, Prozesse\, Strukturen u.
   Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4100-V
@@ -676,7 +676,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260601T141500
 DTEND;TZID=Europe/Berlin:20260601T174500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:472a4e74b797af68@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden d. Heba
  mmenforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -687,7 +687,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260602T101500
 DTEND;TZID=Europe/Berlin:20260602T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:3cfd3fc48497dfda@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nAkteure\, Prozesse\, Strukturen u.
   Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4100-V
@@ -698,7 +698,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260602T141500
 DTEND;TZID=Europe/Berlin:20260602T171500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:5d046b71c42f6222@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nTheorien u. Methoden d. Hebamme
  nforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -708,7 +708,7 @@ BEGIN:VEVENT
 SUMMARY:[A] V HW 4.10.8 Theorie-Praxis-Transfer
 DTSTART;TZID=Europe/Berlin:20260603T083000
 DTEND;TZID=Europe/Berlin:20260603T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:f40a2f87310bdf7c@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nTheorie-Praxis-Transfer Seminar Gruppe A [1]\nM
  odul: 84-993-20212-4100-V8\nGruppe: A
@@ -718,7 +718,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.6 Beratung zu Sex. u. Familienpl. Vorl.
 DTSTART;TZID=Europe/Berlin:20260603T123000
 DTEND;TZID=Europe/Berlin:20260603T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:8484c69085a0b60f@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Sem
  inar\nModul: 84-993-20212-4100-V6
@@ -729,7 +729,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260604T083000
 DTEND;TZID=Europe/Berlin:20260604T111500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:abdf0b0c520cb569@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nAkteure\, Prozesse\, Struktur
  en u. Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4
@@ -740,7 +740,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.7 Berufsgeschichte Vorl.
 DTSTART;TZID=Europe/Berlin:20260604T120000
 DTEND;TZID=Europe/Berlin:20260604T151500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:95163d6597c426b1@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBerufsgeschichte Seminar\nModul: 84-993-2
  0212-4100-V7
@@ -750,7 +750,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260605T083000
 DTEND;TZID=Europe/Berlin:20260605T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:c9a627239dcc36e3@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -760,7 +760,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.3 BWL\, Marketing u. Öffentlichk. Vorl.
 DTSTART;TZID=Europe/Berlin:20260605T123000
 DTEND;TZID=Europe/Berlin:20260605T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:547641c5973bbb4a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBWL\, Marketing und Öffentlichkeitsarbei
  t Seminar\nModul: 84-993-20212-4100-V3
@@ -771,7 +771,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260608T101500
 DTEND;TZID=Europe/Berlin:20260608T134500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:f5d30ce77031fb94@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nAkteure\, Prozesse\, Strukturen u.
   Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4100-V
@@ -782,7 +782,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260608T141500
 DTEND;TZID=Europe/Berlin:20260608T170000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:53cea07fdb3bcebe@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden d. Heba
  mmenforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -793,7 +793,7 @@ SUMMARY:V HW 4.10.4 Akteure\, Proz.\, Strukt. u. Finanz. i. dt. Gesundheit
  sw. Vorl.
 DTSTART;TZID=Europe/Berlin:20260609T101500
 DTEND;TZID=Europe/Berlin:20260609T124500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:535ba83d042c5c56@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professor Dr. Rafi\nAkteure\, Prozesse\, Strukturen u.
   Finanzierung im dt. Gesundheitssystem Seminar\nModul: 84-993-20212-4100-V
@@ -804,7 +804,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.6 Beratung zu Sex. u. Familienpl. Vorl.
 DTSTART;TZID=Europe/Berlin:20260609T131500
 DTEND;TZID=Europe/Berlin:20260609T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:a7de88192e8b5202@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nBeratung zu Sexualität und Familienplanung Sem
  inar\nModul: 84-993-20212-4100-V6
@@ -814,7 +814,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.7 Berufsgeschichte Vorl.
 DTSTART;TZID=Europe/Berlin:20260610T083000
 DTEND;TZID=Europe/Berlin:20260610T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:3bf969560debed1f@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBerufsgeschichte Seminar\nModul: 84-993-2
  0212-4100-V7
@@ -824,7 +824,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.3 Berufsethik u. ethische Entscheidungsf. Vorl.
 DTSTART;TZID=Europe/Berlin:20260610T123000
 DTEND;TZID=Europe/Berlin:20260610T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:b22112d0ddcccec3@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nBerufsethik u. ethisc
  he Entscheidungsfindung Seminar\nModul: 84-993-20212-4110-V3
@@ -833,7 +833,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.3 Diag. u. Therapie perip. Risiken/Vorlesung
 DTSTART;TZID=Europe/Berlin:20260611T083000
 DTEND;TZID=Europe/Berlin:20260611T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:742776d066b6ebfb@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Mangler\nDiagnostik u. Therapie peripa
  rtaler Risiken Seminar\nModul: 84-993-20212-4090-V3
@@ -843,7 +843,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260611T123000
 DTEND;TZID=Europe/Berlin:20260611T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:e6f0a91d496375fc@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nTheorien u. Methoden d. Hebamme
  nforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -853,7 +853,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260612T083000
 DTEND;TZID=Europe/Berlin:20260612T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:fcd747ae83a83cc5@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -863,7 +863,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.3 Berufsethik u. ethische Entscheidungsf. Vorl.
 DTSTART;TZID=Europe/Berlin:20260615T111500
 DTEND;TZID=Europe/Berlin:20260615T144500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:278063064812ba31@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nBerufsethik u. ethisc
  he Entscheidungsfindung Seminar\nModul: 84-993-20212-4110-V3
@@ -873,7 +873,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260616T083000
 DTEND;TZID=Europe/Berlin:20260616T124500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:6a7851eb60b4149a@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -883,7 +883,7 @@ BEGIN:VEVENT
 SUMMARY:[A] V HW 4.10.8 Theorie-Praxis-Transfer
 DTSTART;TZID=Europe/Berlin:20260616T133000
 DTEND;TZID=Europe/Berlin:20260616T160000
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:1d082e100807b102@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Beitz\nTheorie-Praxis-Transfer Seminar Gruppe A [2]\nM
  odul: 84-993-20212-4100-V8\nGruppe: A
@@ -893,7 +893,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.9.2 Pharm. i. d. Geburtshilfe Vorl.
 DTSTART;TZID=Europe/Berlin:20260617T101500
 DTEND;TZID=Europe/Berlin:20260617T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:5d969f4b2dbb9039@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Neumann\nPharmakologie in der Geburtshilfe Seminar\nMo
  dul: 84-993-20212-4090-V2
@@ -903,7 +903,7 @@ BEGIN:VEVENT
 SUMMARY:[A] V HW 4.10.9 Theorie-Praxis-Transfer/Supervision
 DTSTART;TZID=Europe/Berlin:20260617T123000
 DTEND;TZID=Europe/Berlin:20260617T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:4525fcf88b57673f@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Faensen\nTheorie-Praxis-Transfer Supervision Seminar G
  ruppe A [2]\nModul: 84-993-20212-4100-V9\nGruppe: A
@@ -913,7 +913,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260618T083000
 DTEND;TZID=Europe/Berlin:20260618T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ce1fc1618c606f6b@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -923,7 +923,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.2 Krisen u. Konflikte bew. Vorl.
 DTSTART;TZID=Europe/Berlin:20260618T123000
 DTEND;TZID=Europe/Berlin:20260618T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:ca21f861a5dd7cc9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nKrisen u. Konflikte bewältigen Vorl.\nModul: 8
  4-993-20212-4110-V2
@@ -933,7 +933,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.3 Berufsethik u. ethische Entscheidungsf. Vorl.
 DTSTART;TZID=Europe/Berlin:20260619T083000
 DTEND;TZID=Europe/Berlin:20260619T114500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:0b3cf8c7f60d9f54@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nBerufsethik u. ethische Entsche
  idungsfindung Seminar\nModul: 84-993-20212-4110-V3
@@ -943,7 +943,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.10.7 Berufsgeschichte Vorl.
 DTSTART;TZID=Europe/Berlin:20260622T083000
 DTEND;TZID=Europe/Berlin:20260622T111500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:113b832485c667cb@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Weeber-Pilz\nBerufsgeschichte Seminar\nModul: 84-993-2
  0212-4100-V7
@@ -953,7 +953,7 @@ BEGIN:VEVENT
 SUMMARY:V HW 4.11.1 Theorien u. Methoden der Hebammenf. I Vorl.
 DTSTART;TZID=Europe/Berlin:20260622T123000
 DTEND;TZID=Europe/Berlin:20260622T154500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:4bfea33a2008d90d@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Simon\nTheorien u. Methoden d. Hebamme
  nforschung I Seminar\nModul: 84-993-20212-4110-V1
@@ -963,7 +963,7 @@ BEGIN:VEVENT
 SUMMARY:V HW P4 Praxisbegleitseminar Termin 1 + 2
 DTSTART;TZID=Europe/Berlin:20260625T083000
 DTEND;TZID=Europe/Berlin:20260625T144500
-DTSTAMP:20260811T000000Z
+DTSTAMP:20260812T000000Z
 UID:d6f55649c2bb9ae1@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\, Professorin Dr. Simon\nPraxisbegleitseminar Te
  rmin 1 + 2 Teil 2 [2]\nModul: 84-993-20212-4110-V4
