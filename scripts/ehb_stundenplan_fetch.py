@@ -70,6 +70,26 @@ GROUP_ONLY_LINE_RE = re.compile(
     r"^\s*(?:(?:Gr\.?|Gruppe)\s*(?:[A-D]|[1-3][ab]|[12])\s*[,;/]?\s*)+$",
     re.IGNORECASE,
 )
+# Gruppen-Marker OHNE "Gr."-Praefix: manche Plaene schreiben in die Termin-
+# zelle nur "1b", "3a" oder "A" (eigene Zeile) statt "Gr. 1b"/"Gr. A". Erkannt
+# werden nur die eindeutigen Muster Grossgruppe [A-D] und Kleingruppe [1-3][ab].
+# Bloße Ziffer "1"/"2" (Zweiergruppe) bleibt ausgeschlossen — zu mehrdeutig
+# (koennte Raumnummer o.ae. sein), sie braucht weiter das "Gr."-Praefix.
+BARE_GROUP_TOKEN_RE = re.compile(r"[A-D]|[1-3][ab]")
+
+
+def is_bare_group_line(part: str) -> bool:
+    """True, wenn `part` NUR aus praefixlosen Gruppen-Markern (+ Trennern) besteht.
+
+    Z.B. "A", "1b", "1a, 1b", "C / D". Titel, Raeume ("B 202") oder Dozenten
+    bleiben aussen vor, weil nach Entfernen der Marker+Trenner noch Text uebrig
+    bliebe.
+    """
+    if not BARE_GROUP_TOKEN_RE.search(part):
+        return False
+    rest = BARE_GROUP_TOKEN_RE.sub("", part)
+    rest = re.sub(r"[\s,;/]", "", rest)
+    return rest == ""
 DATE_RE = re.compile(r"(\d{2})\.(\d{2})\.(\d{2})")
 TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
 MODUL_CODE_RE = re.compile(r"\d{2}-\d{3}-\d{5}-\d{4}-[A-Z]\d+")
@@ -184,6 +204,13 @@ def parse_event_cell(td: Tag, iso_date: str, footnotes: dict[str, str] | None = 
     for p in parts:
         for gm in GROUP_RE.finditer(p):
             group_hits.add(normalize_group_marker(gm.group(1)))
+        # Bloße Gruppen-Zeile ohne "Gr."-Praefix (z.B. "1b", "2a, 2b", "A"):
+        # Marker einsammeln und Zeile als nicht-strukturell behandeln, damit sie
+        # nicht faelschlich als Dozent/Raum interpretiert wird.
+        if is_bare_group_line(p):
+            for t in BARE_GROUP_TOKEN_RE.findall(p):
+                group_hits.add(normalize_group_marker(t))
+            continue
         if GROUP_ONLY_LINE_RE.match(p):
             continue  # Zeile besteht nur aus Gruppen-Markern → nicht strukturell
         structural_parts.append(p)

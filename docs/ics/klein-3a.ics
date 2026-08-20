@@ -55,4 +55,24 @@ DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 3a [8]\nModul: 84-993-20212-4100-V5\nGruppe: 3a
 LOCATION:B 204
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[3a] U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
+DTSTART;TZID=Europe/Berlin:20270205T083000
+DTEND;TZID=Europe/Berlin:20270205T114500
+DTSTAMP:20260820T000000Z
+UID:5ca29a5c52884e8b@ehb-stundenplan.claudette
+DESCRIPTION:Dozent: Freifrau von Godin\nGeburtshilfliche Notfälle u. Risi
+ komanagement Seminar\nModul: 84-993-20212-5120-V1\nGruppe: 3a
+LOCATION:C 101\, C 104
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[3a] U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
+DTSTART;TZID=Europe/Berlin:20270215T083000
+DTEND;TZID=Europe/Berlin:20270215T114500
+DTSTAMP:20260820T000000Z
+UID:6b8b8c049c784271@ehb-stundenplan.claudette
+DESCRIPTION:Dozent: Beitz\nGeburtshilfliche Notfälle u. Risikomanagement 
+ Seminar\nModul: 84-993-20212-5120-V1\nGruppe: 3a
+LOCATION:C 101\, C 104
+END:VEVENT
 END:VCALENDAR

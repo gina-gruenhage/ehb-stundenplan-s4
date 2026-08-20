@@ -980,16 +980,6 @@ DESCRIPTION:Dozent: Professorin Dr. Grieshop\nTheorien u. Methoden der Heb
 LOCATION:C 202
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20261002T123000
-DTEND;TZID=Europe/Berlin:20261002T154500
-DTSTAMP:20260820T000000Z
-UID:90d2c0495fa1593e@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1a\, Freifrau von Godin\nGeburtshilfliche Notfälle u.
-  Risikomanagement Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:V HW 5.14.3 Projekt Gesundheitsangeb. f. Frauen u. junge Fam./Vorl
  .
 DTSTART;TZID=Europe/Berlin:20261002T083000
@@ -1078,54 +1068,14 @@ DESCRIPTION:Dozent: Professorin Dr. Simon\nSupervision Vorlesung/Übung Za
 LOCATION:C 202
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20261009T123000
-DTEND;TZID=Europe/Berlin:20261009T154500
-DTSTAMP:20260820T000000Z
-UID:8e405f358a47696a@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1b\, Freifrau von Godin\nGeburtshilfliche Notfälle u.
-  Risikomanagement Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20261012T123000
-DTEND;TZID=Europe/Berlin:20261012T154500
-DTSTAMP:20260820T000000Z
-UID:b209156e48b013c0@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: B\, Diedrich\nSupervision Vorlesung/Übung\nModul: 84-
- 993-20212-5120-V7
-LOCATION:E 121
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20261012T123000
-DTEND;TZID=Europe/Berlin:20261012T154500
-DTSTAMP:20260820T000000Z
-UID:c49ec8c63ddd3d1e@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: A\, Faensen\nSupervision Vorlesung/Übung\nModul: 84-9
- 93-20212-5120-V7
-LOCATION:B 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
+SUMMARY:[D] U HW 5.12.7 Theorie-Praxis-Transfer Supervision
 DTSTART;TZID=Europe/Berlin:20261012T123000
 DTEND;TZID=Europe/Berlin:20261012T154500
 DTSTAMP:20260820T000000Z
 UID:d07a144e837d1ef0@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: D\, Sundermeyer\nSupervision Vorlesung/Übung\nModul: 
- 84-993-20212-5120-V7
+DESCRIPTION:Dozent: Sundermeyer\nSupervision Vorlesung/Übung\nModul: 84-9
+ 93-20212-5120-V7\nGruppe: D
 LOCATION:C 205
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20261012T123000
-DTEND;TZID=Europe/Berlin:20261012T154500
-DTSTAMP:20260820T000000Z
-UID:e490751e56a6d86d@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: C\, Hansen\nSupervision Vorlesung/Übung\nModul: 84-99
- 3-20212-5120-V7
-LOCATION:F 206
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
@@ -1147,16 +1097,6 @@ UID:df4428cb87a5d8d9@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nProjekt Gesundheitsangebote f. Frauen u. junge 
  Familien/Vorl.\nModul: 84-993-20212-5140-V3
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20261013T123000
-DTEND;TZID=Europe/Berlin:20261013T154500
-DTSTAMP:20260820T000000Z
-UID:ebab80c34018382a@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2a\, Freifrau von Godin\nGeburtshilfliche Notfälle u.
-  Risikomanagement Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
@@ -1187,16 +1127,6 @@ UID:f076135faa498b55@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Hutfless\nNeugeborenen u. Frühgeborenen Intensivmediz
  in Seminar\nModul: 84-993-20212-5120-V3
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20261016T123000
-DTEND;TZID=Europe/Berlin:20261016T154500
-DTSTAMP:20260820T000000Z
-UID:48405a80a749cc08@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2b\, Freifrau von Godin\nGeburtshilfliche Notfälle u.
-  Risikomanagement Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[G1] U HW 5.14.1 Theor. u. Meth. d. Hebammenf. II/Vorlesung
@@ -1479,44 +1409,14 @@ DESCRIPTION:Dozent: Dr. Stiff\nNeugeborenen u. Frühgeborenen Intensivmedi
 LOCATION:C 202
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20270125T123000
-DTEND;TZID=Europe/Berlin:20270125T154500
-DTSTAMP:20260820T000000Z
-UID:b30ce161e3c699a1@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: C\, Hansen\nSupervision Vorlesung/Übung\nModul: 84-99
- 3-20212-5120-V7
-LOCATION:B 204
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20270125T123000
-DTEND;TZID=Europe/Berlin:20270125T154500
-DTSTAMP:20260820T000000Z
-UID:b6a829b87f4315e9@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: B\, Diedrich\nSupervision Vorlesung/Übung\nModul: 84-
- 993-20212-5120-V7
-LOCATION:C 204
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
+SUMMARY:[D] U HW 5.12.7 Theorie-Praxis-Transfer Supervision
 DTSTART;TZID=Europe/Berlin:20270125T123000
 DTEND;TZID=Europe/Berlin:20270125T154500
 DTSTAMP:20260820T000000Z
 UID:ca7736da23c60898@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: D\, Sundermeyer\nSupervision Vorlesung/Übung\nModul: 
- 84-993-20212-5120-V7
+DESCRIPTION:Dozent: Sundermeyer\nSupervision Vorlesung/Übung\nModul: 84-9
+ 93-20212-5120-V7\nGruppe: D
 LOCATION:C 201
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.7 Theorie-Praxis-Transfer Supervision
-DTSTART;TZID=Europe/Berlin:20270125T123000
-DTEND;TZID=Europe/Berlin:20270125T154500
-DTSTAMP:20260820T000000Z
-UID:ee2f6806db58311a@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: A\, Faensen\nSupervision Vorlesung/Übung\nModul: 84-9
- 93-20212-5120-V7
-LOCATION:E 121
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.12.5 Familienpl. u. Reproduktionsm. Vorl.
@@ -1548,16 +1448,6 @@ DESCRIPTION:Dozent: B 202\, online\nRechtsgrundlagen u. Hilfsangebote f. j
  unge Familien Seminar N. N. [2]\nModul: 84-993-20212-5130-V1
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.13.2 Theorien prof. Beratung
-DTSTART;TZID=Europe/Berlin:20270129T123000
-DTEND;TZID=Europe/Berlin:20270129T154500
-DTSTAMP:20260820T000000Z
-UID:43e350c472cbca35@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2b\, Beitz\nTheorien professioneller Beratung\nModul: 
- 84-993-20212-5130-V2
-LOCATION:C 204
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[G1] U HW 5.14.3 Projekt Gesundheitsangeb. f. Frauen u. junge Fam.
  /Vorl.
 DTSTART;TZID=Europe/Berlin:20270129T083000
@@ -1569,16 +1459,6 @@ DESCRIPTION:Dozent: Kunze\nProjekt Gesundheitsangebote f. Frauen u. junge
 LOCATION:E 131
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.13.2 Theorien prof. Beratung
-DTSTART;TZID=Europe/Berlin:20270129T083000
-DTEND;TZID=Europe/Berlin:20270129T114500
-DTSTAMP:20260820T000000Z
-UID:c9effe6d0e00a147@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1b\, Beitz\nTheorien professioneller Beratung\nModul: 
- 84-993-20212-5130-V2
-LOCATION:C 204
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:V HW 5.14.2 Evidenb. Ber. zur Ernäh. v. Mutter u. Kind/Vorlesung
 DTSTART;TZID=Europe/Berlin:20270201T123000
 DTEND;TZID=Europe/Berlin:20270201T154500
@@ -1587,16 +1467,6 @@ UID:bb68d520245e1e50@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Dr. Franz\nEvidenzbasierte Beratung zur Ernährung v. 
  Mutter u. Kind Seminar\nModul: 84-993-20212-5140-V2
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270201T083000
-DTEND;TZID=Europe/Berlin:20270201T114500
-DTSTAMP:20260820T000000Z
-UID:f5a0a0a727040231@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1a\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.13.3 Förderung perinataler psychischer Gesundheit
@@ -1640,36 +1510,6 @@ DESCRIPTION:Dozent: Gröning\nFörderung perinataler psychischer Gesundhei
 LOCATION:C 202
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270205T083000
-DTEND;TZID=Europe/Berlin:20270205T114500
-DTSTAMP:20260820T000000Z
-UID:5ca29a5c52884e8b@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 3a\, Freifrau von Godin\nGeburtshilfliche Notfälle u.
-  Risikomanagement Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.13.2 Theorien prof. Beratung
-DTSTART;TZID=Europe/Berlin:20270205T123000
-DTEND;TZID=Europe/Berlin:20270205T154500
-DTSTAMP:20260820T000000Z
-UID:e5f81cac022ad2b8@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2a\, Beitz\nTheorien professioneller Beratung\nModul: 
- 84-993-20212-5130-V2
-LOCATION:C 204
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.13.2 Theorien prof. Beratung
-DTSTART;TZID=Europe/Berlin:20270205T083000
-DTEND;TZID=Europe/Berlin:20270205T114500
-DTSTAMP:20260820T000000Z
-UID:f3df4ac4eb49f647@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1a\, Beitz\nTheorien professioneller Beratung\nModul: 
- 84-993-20212-5130-V2
-LOCATION:C 204
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:V HW 5.14.2 Evidenb. Ber. zur Ernäh. v. Mutter u. Kind/Vorlesung
 DTSTART;TZID=Europe/Berlin:20270208T123000
 DTEND;TZID=Europe/Berlin:20270208T154500
@@ -1688,26 +1528,6 @@ UID:cd7432c0841e1e6c@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Dr. Stiff\nNeugeborenen u. Frühgeborenen Intensivmedi
  zin Seminar\nModul: 84-993-20212-5120-V3
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270209T123000
-DTEND;TZID=Europe/Berlin:20270209T154500
-DTSTAMP:20260820T000000Z
-UID:7b0dd09ff5a0e009@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 3b\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270209T083000
-DTEND;TZID=Europe/Berlin:20270209T114500
-DTSTAMP:20260820T000000Z
-UID:ab7ee06ceea91f16@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2b\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.12.5 Familienpl. u. Reproduktionsm. Vorl.
@@ -1756,16 +1576,6 @@ UID:b4c7c508c3fdd76b@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Kunze\nEvidenzbasierte Beratung zur Ernährung v. Mutt
  er u. Kind Seminar\nModul: 84-993-20212-5140-V2
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270215T083000
-DTEND;TZID=Europe/Berlin:20270215T114500
-DTSTAMP:20260820T000000Z
-UID:6b8b8c049c784271@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 3a\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.13.1 Rechtsgrundl. u. Hilfsangeb. f. junge Familien/Vorl.
@@ -1849,26 +1659,6 @@ DESCRIPTION:Dozent: Gröning\nFörderung perinataler psychischer Gesundhei
 LOCATION:B 202
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270219T083000
-DTEND;TZID=Europe/Berlin:20270219T114500
-DTSTAMP:20260820T000000Z
-UID:d2e5bd34c55d50b0@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 1b\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
-DTSTART;TZID=Europe/Berlin:20270219T123000
-DTEND;TZID=Europe/Berlin:20270219T154500
-DTSTAMP:20260820T000000Z
-UID:ed22629cadaa889e@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 2a\, Beitz\nGeburtshilfliche Notfälle u. Risikomanage
- ment Seminar\nModul: 84-993-20212-5120-V1
-LOCATION:C 101\, C 104
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:V HW 5.14.1 Theor. u. Meth. d. Hebammenf. II/Vorlesung
 DTSTART;TZID=Europe/Berlin:20270222T083000
 DTEND;TZID=Europe/Berlin:20270222T114500
@@ -1897,16 +1687,6 @@ UID:182952e0ac0bc8d8@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Triphaus\nGeburtshilfliche Notfälle u. Risikomanageme
  nt Seminar\nModul: 84-993-20212-5120-V1
 LOCATION:C 202
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:U HW 5.13.2 Theorien prof. Beratung
-DTSTART;TZID=Europe/Berlin:20270223T083000
-DTEND;TZID=Europe/Berlin:20270223T114500
-DTSTAMP:20260820T000000Z
-UID:2c990fd4ed77b4d3@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: 3b\, Beitz\nTheorien professioneller Beratung\nModul: 
- 84-993-20212-5130-V2
-LOCATION:C 204
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:V HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.

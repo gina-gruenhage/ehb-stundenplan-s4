@@ -10,8 +10,8 @@ DTSTART;TZID=Europe/Berlin:20260422T123000
 DTEND;TZID=Europe/Berlin:20260422T154500
 DTSTAMP:20260820T000000Z
 UID:3928730812b3fbea@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 1b [3]
- \nModul: 84-993-20212-4110-V2\nGruppe: 1b
+DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 1b [3]\
+ nModul: 84-993-20212-4110-V2\nGruppe: 1b
 LOCATION:C 101\, C 102
 END:VEVENT
 BEGIN:VEVENT
@@ -64,5 +64,35 @@ UID:f8e23e144914c8de@ehb-stundenplan.claudette
 DESCRIPTION:Dozent: Professorin Dr. Feldhaus-Plumin\nKommunikation und Ber
  atung Gruppe 1b [4]\nModul: 84-993-20212-4100-V5\nGruppe: 1b
 LOCATION:C 204
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[1b] U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
+DTSTART;TZID=Europe/Berlin:20261009T123000
+DTEND;TZID=Europe/Berlin:20261009T154500
+DTSTAMP:20260820T000000Z
+UID:8e405f358a47696a@ehb-stundenplan.claudette
+DESCRIPTION:Dozent: Freifrau von Godin\nGeburtshilfliche Notfälle u. Risi
+ komanagement Seminar\nModul: 84-993-20212-5120-V1\nGruppe: 1b
+LOCATION:C 101\, C 104
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[1b] U HW 5.13.2 Theorien prof. Beratung
+DTSTART;TZID=Europe/Berlin:20270129T083000
+DTEND;TZID=Europe/Berlin:20270129T114500
+DTSTAMP:20260820T000000Z
+UID:c9effe6d0e00a147@ehb-stundenplan.claudette
+DESCRIPTION:Dozent: Beitz\nTheorien professioneller Beratung\nModul: 84-99
+ 3-20212-5130-V2\nGruppe: 1b
+LOCATION:C 204
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[1b] U HW 5.12.1 Geburtsh. Notfälle u. Risikom. Vorl.
+DTSTART;TZID=Europe/Berlin:20270219T083000
+DTEND;TZID=Europe/Berlin:20270219T114500
+DTSTAMP:20260820T000000Z
+UID:d2e5bd34c55d50b0@ehb-stundenplan.claudette
+DESCRIPTION:Dozent: Beitz\nGeburtshilfliche Notfälle u. Risikomanagement 
+ Seminar\nModul: 84-993-20212-5120-V1\nGruppe: 1b
+LOCATION:C 101\, C 104
 END:VEVENT
 END:VCALENDAR
