@@ -31,8 +31,8 @@ DTSTART;TZID=Europe/Berlin:20260616T133000
 DTEND;TZID=Europe/Berlin:20260616T164500
 DTSTAMP:20260820T000000Z
 UID:ebff78d54c2b0901@ehb-stundenplan.claudette
-DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 2b [6]\
- nModul: 84-993-20212-4110-V2\nGruppe: 2b
+DESCRIPTION:Dozent: Bezold\nKrisen u. Konflikte bewältigen Gruppe 2b [6]
+ \nModul: 84-993-20212-4110-V2\nGruppe: 2b
 LOCATION:C 101\, C 102
 END:VEVENT
 BEGIN:VEVENT
