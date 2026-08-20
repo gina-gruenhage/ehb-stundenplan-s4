@@ -19,8 +19,22 @@ Jede Veranstaltung enthaelt:
 Usage:
     python3 execution/ehb_stundenplan_fetch.py
     python3 execution/ehb_stundenplan_fetch.py --url <URL> --out <pfad.json>
+    # Mehrere Plaene vereinigen (z.B. altes + neues Semester):
+    python3 execution/ehb_stundenplan_fetch.py --url <ALT> --url <NEU> --out <pfad.json>
 
-Default-URL: H 4. Semester SoSe 26.
+Default-URL: H 2. Semester SoSe 26.
+
+Mehrere --url:
+    Alle angegebenen Plaene werden geladen und ihre Veranstaltungen vereinigt
+    (dedupliziert). Ein einzelner nicht erreichbarer Link (z.B. altes Semester
+    offline genommen) fuehrt NICHT zum Abbruch — er wird uebersprungen und in
+    der Zusammenfassung als Fehler vermerkt. Nur wenn ueber ALLE Links zusammen
+    0 Veranstaltungen herauskommen, bricht das Skript ab (WAF-/Block-Schutz).
+
+    Das JSON enthaelt zusaetzlich `sources`: pro erfolgreich geladenem Plan der
+    abgedeckte Datumsbereich (date_min/date_max). ehb_stundenplan_to_ics.py nutzt
+    diese Bereiche, um bestehende Feed-Termine ausserhalb der aktuell geladenen
+    Plaene zu erhalten (statt sie zu loeschen), wenn ein alter Link wegfaellt.
 """
 from __future__ import annotations
 
@@ -35,7 +49,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup, Tag
 
-DEFAULT_URL = "https://www.eh-berlin.de/stundenplan/Studierende/HTML/H_4_H4.html"
+DEFAULT_URL = "https://www.eh-berlin.de/stundenplan/Studierende/HTML/H_2_H2.html"
 DEFAULT_OUT = Path("tmp/ehb_events.json")
 
 # Default python-requests Header werden vom EHB-Edge mit 415 abgewiesen,
@@ -46,15 +60,35 @@ BROWSER_HEADERS = {
     "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
 }
 
-GROUP_RE = re.compile(r"(?:Gr\.?|Gruppe)\s*([A-D]|[1-3][ab])", re.IGNORECASE)
-# Eine Zeile, die nur Gruppen-Marker enthaelt (z.B. "Gr. A", "Gr. 1a, Gr. 1b")
+# Drei Einteilungen: Grossgruppe A-D, Kleingruppe 1a-3b, und (ab 6. Sem) die
+# "Zweiergruppe" mit bloßer Ziffer "Gr. 1"/"Gr. 2". Reihenfolge in der Alternative
+# ist wichtig: "1a" muss VOR bloßem "1" matchen, sonst wird 1a als Zweiergruppe 1
+# fehlgelesen. Bloße Ziffer nur 1/2 (kein "3" in den Plaenen beobachtet).
+GROUP_RE = re.compile(r"(?:Gr\.?|Gruppe)\s*([A-D]|[1-3][ab]|[12])", re.IGNORECASE)
+# Eine Zeile, die nur Gruppen-Marker enthaelt (z.B. "Gr. A", "Gr. 1a, Gr. 1b", "Gr. 1")
 GROUP_ONLY_LINE_RE = re.compile(
-    r"^\s*(?:(?:Gr\.?|Gruppe)\s*(?:[A-D]|[1-3][ab])\s*[,;/]?\s*)+$",
+    r"^\s*(?:(?:Gr\.?|Gruppe)\s*(?:[A-D]|[1-3][ab]|[12])\s*[,;/]?\s*)+$",
     re.IGNORECASE,
 )
 DATE_RE = re.compile(r"(\d{2})\.(\d{2})\.(\d{2})")
 TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
 MODUL_CODE_RE = re.compile(r"\d{2}-\d{3}-\d{5}-\d{4}-[A-Z]\d+")
+
+
+def normalize_group_marker(g: str) -> str:
+    """Vereinheitlicht einen erkannten Gruppen-Marker.
+
+    - Grossgruppe A-D  → "A".."D" (Grossbuchstabe)
+    - Kleingruppe 1a-3b → "1a".."3b" (klein)
+    - Zweiergruppe 1/2  → "G1"/"G2" (bloße Ziffer, ab 6. Sem; eigener Namespace,
+      damit sie nicht mit Kleingruppe "1"/"2" verwechselt wird)
+    """
+    gl = g.lower()
+    if len(gl) == 2 and gl[0].isdigit():  # "1a".."3b"
+        return gl
+    if gl.isdigit():  # bloße "1"/"2" → Zweiergruppe
+        return "G" + gl
+    return g.upper()  # "A".."D"
 
 
 def fetch_html(url: str) -> str:
@@ -149,8 +183,7 @@ def parse_event_cell(td: Tag, iso_date: str, footnotes: dict[str, str] | None = 
     structural_parts: list[str] = []
     for p in parts:
         for gm in GROUP_RE.finditer(p):
-            g = gm.group(1)
-            group_hits.add(g.lower() if g[0].isdigit() else g.upper())
+            group_hits.add(normalize_group_marker(gm.group(1)))
         if GROUP_ONLY_LINE_RE.match(p):
             continue  # Zeile besteht nur aus Gruppen-Markern → nicht strukturell
         structural_parts.append(p)
@@ -205,8 +238,7 @@ def parse_event_cell(td: Tag, iso_date: str, footnotes: dict[str, str] | None = 
     # Auch Gruppen aus Fussnoten einsammeln (z.B. "[5] Gruppe A / Online")
     for note in referenced_notes:
         for gm in GROUP_RE.finditer(note):
-            g = gm.group(1)
-            group_hits.add(g.lower() if g[0].isdigit() else g.upper())
+            group_hits.add(normalize_group_marker(gm.group(1)))
 
     # Raum-Fallback: wenn leer und Fussnote enthaelt "Online" → "Online"
     if not room:
@@ -306,30 +338,104 @@ def parse_all(html: str) -> list[dict]:
     return unique
 
 
+def dedup_and_sort(events: list[dict]) -> list[dict]:
+    """Dedupliziert per (date, start, title, room) und sortiert chronologisch."""
+    seen: set[tuple[str, str, str, str]] = set()
+    unique: list[dict] = []
+    for ev in events:
+        key = (ev["date"], ev["start"], ev["title"], ev["room"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(ev)
+    unique.sort(key=lambda e: (e["date"], e["start"]))
+    return unique
+
+
+def date_span(events: list[dict]) -> tuple[str | None, str | None]:
+    dates = [e["date"] for e in events if e.get("date")]
+    if not dates:
+        return None, None
+    return min(dates), max(dates)
+
+
 def main() -> int:
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--url", default=DEFAULT_URL)
-    p.add_argument("--out", default=str(DEFAULT_OUT), type=Path)
+    p = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Beispiele:\n"
+            "  ehb_stundenplan_fetch.py --out tmp/ehb.json\n"
+            "  ehb_stundenplan_fetch.py --url <ALT> --url <NEU> --out tmp/ehb.json\n"
+            "  ehb_stundenplan_fetch.py --html-file plan.html --out tmp/ehb.json\n"
+        ),
+    )
+    p.add_argument(
+        "--url",
+        action="append",
+        default=None,
+        help="Plan-URL. Mehrfach angebbar, um mehrere Semester-Plaene zu "
+        f"vereinigen. Default (wenn keine angegeben): {DEFAULT_URL}",
+    )
+    p.add_argument("--out", default=str(DEFAULT_OUT), type=Path,
+                   help="Ausgabe-JSON (Default: %(default)s)")
     p.add_argument("--html-file", type=Path, help="Lokale HTML-Datei statt URL")
     args = p.parse_args()
 
+    sources: list[dict] = []
+    all_events: list[dict] = []
+
     if args.html_file:
         html = Path(args.html_file).read_text(encoding="utf-8")
+        evs = parse_all(html)
+        all_events.extend(evs)
+        dmin, dmax = date_span(evs)
+        sources.append(
+            {"url": str(args.html_file), "event_count": len(evs),
+             "date_min": dmin, "date_max": dmax, "ok": True}
+        )
     else:
-        html = fetch_html(args.url)
+        urls = args.url or [DEFAULT_URL]
+        for url in urls:
+            try:
+                html = fetch_html(url)
+                evs = parse_all(html)
+            except requests.RequestException as exc:
+                # Einzelner Link nicht erreichbar (z.B. altes Semester offline):
+                # ueberspringen statt abbrechen. Ob die schon veroeffentlichten
+                # alten Termine erhalten bleiben, entscheidet der ICS-Schritt.
+                print(f"[ehb] WARN: {url} nicht erreichbar ({exc}) — uebersprungen.",
+                      file=sys.stderr)
+                sources.append({"url": url, "event_count": 0,
+                                "date_min": None, "date_max": None,
+                                "ok": False, "error": str(exc)})
+                continue
+            all_events.extend(evs)
+            dmin, dmax = date_span(evs)
+            # HTTP 200 mit 0 Events ist typischerweise eine WAF-/Block-Seite,
+            # kein legitimer Plan → nicht als erfolgreiche Quelle werten.
+            ok = len(evs) > 0
+            sources.append({"url": url, "event_count": len(evs),
+                            "date_min": dmin, "date_max": dmax, "ok": ok})
+            if ok:
+                print(f"[ehb] {url}: {len(evs)} Events ({dmin} … {dmax})", file=sys.stderr)
+            else:
+                print(f"[ehb] WARN: {url}: HTTP 200, aber 0 Events (WAF/Block?) — "
+                      "nicht als Quelle gewertet.", file=sys.stderr)
 
-    events = parse_all(html)
+    events = dedup_and_sort(all_events)
 
     # Schutz gegen WAF-/Block-Seiten: Der EHB-Edge liefert Cloud-IPs
     # (z.B. GitHub-Actions-Runner) teils HTTP 200 mit einer Seite OHNE
     # Stundenplan-Tabelle. parse_all() findet dann 0 Events. Ein leerer
     # Plan ist mitten im Semester nie legitim — hart abbrechen, damit der
     # nachgelagerte ICS-Schritt die guten Kalender nicht mit leeren
-    # ueberschreibt und published.
+    # ueberschreibt und published. Greift erst, wenn ueber ALLE Links zusammen
+    # 0 Events herauskommen (ein einzelner toter Link ist ok).
     if not args.html_file and not events:
         print(
             "[ehb] FEHLER: 0 Veranstaltungen geparst — vermutlich WAF-/Block-Seite "
-            "statt Stundenplan. Breche ab, ohne JSON zu schreiben.",
+            "statt Stundenplan (oder alle Links tot). Breche ab, ohne JSON zu schreiben.",
             file=sys.stderr,
         )
         return 1
@@ -339,7 +445,10 @@ def main() -> int:
     out_path.write_text(
         json.dumps(
             {
-                "source": args.url if not args.html_file else str(args.html_file),
+                # `source` bleibt als Einzelfeld fuer Rueckwaertskompatibilitaet:
+                # kommagetrennte Liste der erfolgreich geladenen Quellen.
+                "source": ", ".join(s["url"] for s in sources if s.get("ok")),
+                "sources": sources,
                 "fetched": date.today().isoformat(),
                 "event_count": len(events),
                 "events": events,
@@ -351,7 +460,10 @@ def main() -> int:
     )
 
     # Kurze Zusammenfassung auf stderr
-    print(f"[ehb] {len(events)} Veranstaltungen → {out_path}", file=sys.stderr)
+    print(f"[ehb] {len(events)} Veranstaltungen (vereinigt) → {out_path}", file=sys.stderr)
+    ok_sources = [s for s in sources if s.get("ok")]
+    if len(sources) > 1:
+        print(f"[ehb] Quellen: {len(ok_sources)}/{len(sources)} erreichbar", file=sys.stderr)
     with_groups = [e for e in events if e["groups"]]
     print(f"[ehb] davon mit Gruppen-Marker: {len(with_groups)}", file=sys.stderr)
     all_groups = sorted({g for e in events for g in e["groups"]})

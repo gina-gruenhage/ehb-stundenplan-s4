@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EHB Hebammen Stundenplan 4. Semester – Kalender-Abo</title>
+  <title>EHB Hebammen Stundenplan – Kalender-Abo</title>
   <style>
     :root {
       --bg: #faf8f4;
@@ -27,6 +27,7 @@
     h1 { font-size: 1.7rem; margin: 0 0 .3rem; }
     .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
     h2 { font-size: 1.05rem; margin: 1.8rem 0 .7rem; }
+    h2:first-child { margin-top: 0; }
     .card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -34,6 +35,7 @@
       padding: 1.2rem 1.3rem;
       margin-bottom: 1.2rem;
     }
+    .hint { color: var(--muted); font-size: .82rem; margin: .1rem 0 .7rem; }
     .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
     .chip {
       display: inline-block;
@@ -52,6 +54,8 @@
       color: white;
       border-color: var(--accent);
     }
+    .groups-card { display: none; }
+    .groups-card.show { display: block; }
     .result {
       margin-top: 1.5rem;
       padding: 1.2rem;
@@ -117,11 +121,22 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>EHB Hebammen 4. Semester &mdash; Stundenplan-Abo</h1>
-    <p class="sub">Wähle deine Gruppen &mdash; du bekommst zwei Kalender-Feeds, die sich automatisch aktualisieren, wenn der Stundenplan online aktualisiert wird.</p>
+    <h1>EHB Hebammen &mdash; Stundenplan-Abo</h1>
+    <p class="sub">W&auml;hle dein Semester und deine Gruppen &mdash; du bekommst zwei Kalender-Feeds, die sich automatisch aktualisieren, wenn der Stundenplan online aktualisiert wird.</p>
 
     <div class="card">
-      <h2>1. Wähle deine Großgruppe</h2>
+      <h2>1. In welchem Semester bist du?</h2>
+      <p class="hint">W&auml;hle deinen Immatrikulationsjahrgang.</p>
+      <div class="chips" id="matrikel">
+        <span class="chip" data-matrikel="26">Matrikel 26</span>
+        <span class="chip" data-matrikel="25">Matrikel 25</span>
+        <span class="chip" data-matrikel="24">Matrikel 24</span>
+        <span class="chip" data-matrikel="23">Matrikel 23</span>
+      </div>
+    </div>
+
+    <div class="card groups-card" id="groups-card">
+      <h2>2. W&auml;hle deine Gro&szlig;gruppe</h2>
       <div class="chips" id="gross">
         <span class="chip" data-gross="a">Gruppe A</span>
         <span class="chip" data-gross="b">Gruppe B</span>
@@ -129,7 +144,7 @@
         <span class="chip" data-gross="d">Gruppe D</span>
       </div>
 
-      <h2>2. Wähle deine Kleingruppe</h2>
+      <h2>3. W&auml;hle deine Kleingruppe</h2>
       <div class="chips" id="klein">
         <span class="chip" data-klein="1a">1a</span>
         <span class="chip" data-klein="1b">1b</span>
@@ -141,7 +156,7 @@
     </div>
 
     <div class="result" id="result">
-      <h3>Deine Feeds</h3>
+      <h3 id="result-title">Deine Feeds</h3>
       <div class="feed" id="feed-gross">
         <div class="feed-label"></div>
         <div class="feed-url"></div>
@@ -162,33 +177,50 @@
 
     <details>
       <summary>So abonnierst du den Kalender</summary>
-      <p><strong>iPhone / iPad:</strong> Tippe auf „Abonnieren". iOS öffnet einen Dialog, mit dem du den Kalender direkt hinzufügen kannst.</p>
-      <p><strong>Google Kalender:</strong> URL kopieren &rarr; calendar.google.com &rarr; links auf „+ Weitere Kalender" &rarr; „Per URL" &rarr; URL einfügen. Google aktualisiert abonnierte Kalender etwa alle 12&ndash;24 Stunden.</p>
-      <p><strong>Apple Kalender (Mac):</strong> Datei &rarr; Neues Kalenderabo &rarr; URL einfügen. Aktualisierungs-Intervall kannst du auf 5 Minuten stellen.</p>
-      <p><strong>Outlook:</strong> Kalender hinzufügen &rarr; Aus dem Internet abonnieren &rarr; URL einfügen.</p>
+      <p><strong>iPhone / iPad:</strong> Tippe auf &bdquo;Abonnieren&ldquo;. iOS &ouml;ffnet einen Dialog, mit dem du den Kalender direkt hinzuf&uuml;gen kannst.</p>
+      <p><strong>Google Kalender:</strong> URL kopieren &rarr; calendar.google.com &rarr; links auf &bdquo;+ Weitere Kalender&ldquo; &rarr; &bdquo;Per URL&ldquo; &rarr; URL einf&uuml;gen. Google aktualisiert abonnierte Kalender etwa alle 12&ndash;24 Stunden.</p>
+      <p><strong>Apple Kalender (Mac):</strong> Datei &rarr; Neues Kalenderabo &rarr; URL einf&uuml;gen. Aktualisierungs-Intervall kannst du auf 5 Minuten stellen.</p>
+      <p><strong>Outlook:</strong> Kalender hinzuf&uuml;gen &rarr; Aus dem Internet abonnieren &rarr; URL einf&uuml;gen.</p>
     </details>
 
     <details>
       <summary>Wie funktioniert die Aktualisierung?</summary>
-      <p>Einmal täglich wird der HTML-Stundenplan der EHB automatisch abgerufen und in ICS-Dateien umgewandelt. Wenn sich Termine ändern (neue Räume, verschobene Stunden, entfallene Termine), übernimmt dein Kalender-App die Änderungen automatisch beim nächsten Polling.</p>
-      <p>Events haben stabile IDs &mdash; Updates überschreiben das alte Event, statt Duplikate zu erzeugen.</p>
+      <p>Einmal t&auml;glich wird der HTML-Stundenplan der EHB automatisch abgerufen und in ICS-Dateien umgewandelt. Wenn sich Termine &auml;ndern (neue R&auml;ume, verschobene Stunden, entfallene Termine), &uuml;bernimmt dein Kalender-App die &Auml;nderungen automatisch beim n&auml;chsten Polling.</p>
+      <p>Beim Semesterwechsel wachsen die Feeds: neue Termine kommen dazu, alte bleiben erhalten &mdash; du musst nie neu abonnieren.</p>
     </details>
 
     <details>
       <summary>Warum zwei Feeds?</summary>
-      <p>Es gibt zwei unabhängige Gruppen-Einteilungen: <strong>Großgruppen A&ndash;D</strong> und <strong>Kleingruppen 1a&ndash;3b</strong>. Der Großgruppen-Feed enthält bereits alle Plenum-Termine (für alle Studierenden), dein Kleingruppen-Feed nur die zusätzlichen Termine deiner Kleingruppe. So hast du keine Duplikate.</p>
+      <p>Es gibt zwei unabh&auml;ngige Gruppen-Einteilungen: <strong>Gro&szlig;gruppen A&ndash;D</strong> und <strong>Kleingruppen 1a&ndash;3b</strong>. Der Gro&szlig;gruppen-Feed enth&auml;lt bereits alle Plenum-Termine (f&uuml;r alle Studierenden), dein Kleingruppen-Feed nur die zus&auml;tzlichen Termine deiner Kleingruppe. So hast du keine Duplikate. Termine mit der Zusatzteilung &bdquo;Gruppe 1/2&ldquo; (A&thinsp;+&thinsp;D = 1, B&thinsp;+&thinsp;C = 2) stecken automatisch im richtigen Gro&szlig;gruppen-Feed.</p>
     </details>
 
     <footer>
-      Quelle: <a href="https://www.eh-berlin.de/stundenplan/Studierende/HTML/H_4_H4.html" target="_blank">eh-berlin.de Stundenplan H 4. Semester</a><br>
-      Inoffiziell, automatisch generiert &middot; <a href="https://github.com/gina-gruenhage/ehb-stundenplan-s4">Quellcode auf GitHub</a>
+      Quelle: <a href="https://www.eh-berlin.de/stundenplan/" target="_blank">eh-berlin.de Stundenplan</a><br>
+      Inoffiziell, automatisch generiert &middot; <a href="https://github.com/gina-gruenhage/ehb-stundenplan">Quellcode auf GitHub</a>
     </footer>
   </div>
 
   <script>
-    const base = location.origin + location.pathname.replace(/index\.html$/, '') + 'ics/';
-    let sel = { gross: null, klein: null };
+    // Matrikel → absolute Feed-Basis-URL. Bestehende Matrikel behalten ihre
+    // alten URLs (kein Neu-Abonnieren noetig), neue liegen in Unterordnern.
+    const MATRIKEL = {
+      '26': { base: 'https://gina-gruenhage.github.io/ehb-stundenplan/ics/matrikel26/', label: 'Matrikel 26 · 1. Sem' },
+      '25': { base: 'https://gina-gruenhage.github.io/ehb-stundenplan/ics/',            label: 'Matrikel 25 · 3. Sem' },
+      '24': { base: 'https://gina-gruenhage.github.io/ehb-stundenplan-s4/ics/',         label: 'Matrikel 24 · 5. Sem' },
+      '23': { base: 'https://gina-gruenhage.github.io/ehb-stundenplan/ics/matrikel23/', label: 'Matrikel 23 · 7. Sem' },
+    };
 
+    let sel = { matrikel: null, gross: null, klein: null };
+
+    document.querySelectorAll('#matrikel .chip').forEach(c => {
+      c.onclick = () => {
+        document.querySelectorAll('#matrikel .chip').forEach(x => x.classList.remove('active'));
+        c.classList.add('active');
+        sel.matrikel = c.dataset.matrikel;
+        document.getElementById('groups-card').classList.add('show');
+        render();
+      };
+    });
     document.querySelectorAll('#gross .chip').forEach(c => {
       c.onclick = () => {
         document.querySelectorAll('#gross .chip').forEach(x => x.classList.remove('active'));
@@ -208,18 +240,21 @@
 
     function render() {
       const result = document.getElementById('result');
-      if (!sel.gross && !sel.klein) { result.classList.remove('show'); return; }
+      if (!sel.matrikel || (!sel.gross && !sel.klein)) { result.classList.remove('show'); return; }
       result.classList.add('show');
 
-      updateFeed('feed-gross', sel.gross,
+      const m = MATRIKEL[sel.matrikel];
+      document.getElementById('result-title').textContent = 'Deine Feeds — ' + m.label;
+
+      updateFeed('feed-gross', m.base, sel.gross,
         sel.gross ? `Plenum & ${sel.gross.toUpperCase()}` : null,
         sel.gross ? `gross-${sel.gross}.ics` : null);
-      updateFeed('feed-klein', sel.klein,
+      updateFeed('feed-klein', m.base, sel.klein,
         sel.klein ? `Kleingruppe ${sel.klein}` : null,
         sel.klein ? `klein-${sel.klein}.ics` : null);
     }
 
-    function updateFeed(id, active, label, filename) {
+    function updateFeed(id, base, active, label, filename) {
       const el = document.getElementById(id);
       if (!active) { el.style.display = 'none'; return; }
       el.style.display = 'block';

@@ -10,6 +10,9 @@ on:
 permissions:
   contents: write
 
+env:
+  BASE: https://www.eh-berlin.de/stundenplan/Studierende/HTML
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -25,11 +28,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 icalendar
 
+      # Matrikel 24: vereinigt den alten (4. Sem, SoSe) und neuen (5. Sem, WiSe)
+      # Plan. Alter Link darf spaeter offline gehen — alte Termine bleiben durch
+      # den Merge erhalten. Feed-URLs bleiben stabil (kein Neu-Abo noetig).
       - name: Fetch Stundenplan → JSON
-        run: python scripts/ehb_stundenplan_fetch.py --out tmp/ehb_events.json
+        run: >
+          python scripts/ehb_stundenplan_fetch.py
+          --url $BASE/H_4_H4.html
+          --url $BASE/Hebammenwissenschaften_5_H5.html
+          --out tmp/ehb_events.json
 
       - name: JSON → ICS Feeds
-        run: python scripts/ehb_stundenplan_to_ics.py --json tmp/ehb_events.json --out docs/ics --semester 4
+        run: python scripts/ehb_stundenplan_to_ics.py --json tmp/ehb_events.json --out docs/ics --semester 5
 
       - name: Commit and push if changed
         run: |
