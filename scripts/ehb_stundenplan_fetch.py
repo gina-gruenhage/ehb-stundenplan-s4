@@ -28,8 +28,12 @@ Mehrere --url:
     Alle angegebenen Plaene werden geladen und ihre Veranstaltungen vereinigt
     (dedupliziert). Ein einzelner nicht erreichbarer Link (z.B. altes Semester
     offline genommen) fuehrt NICHT zum Abbruch — er wird uebersprungen und in
-    der Zusammenfassung als Fehler vermerkt. Nur wenn ueber ALLE Links zusammen
-    0 Veranstaltungen herauskommen, bricht das Skript ab (WAF-/Block-Schutz).
+    der Zusammenfassung als Fehler vermerkt.
+
+Abbruch-Schutz:
+    Liefern ALLE Links zusammen 0 Veranstaltungen (kurze Stoerung der EHB-Seite),
+    wird die ganze Runde nach den Pausen in ROUND_WAITS wiederholt; erst danach
+    bricht das Skript ab, ohne JSON zu schreiben (WAF-/Block-Schutz).
 
     Das JSON enthaelt zusaetzlich `sources`: pro erfolgreich geladenem Plan der
     abgedeckte Datumsbereich (date_min/date_max). ehb_stundenplan_to_ics.py nutzt
@@ -59,6 +63,9 @@ BROWSER_HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
 }
+
+# Pausen (Sekunden) vor erneuten Abruf-Runden, wenn ALLE Links 0 Events liefern.
+ROUND_WAITS = (60, 180)
 
 # Drei Einteilungen: Grossgruppe A-D, Kleingruppe 1a-3b, und (ab 6. Sem) die
 # "Zweiergruppe" mit bloßer Ziffer "Gr. 1"/"Gr. 2". Reihenfolge in der Alternative
@@ -386,6 +393,39 @@ def date_span(events: list[dict]) -> tuple[str | None, str | None]:
     return min(dates), max(dates)
 
 
+def fetch_sources(urls: list[str]) -> tuple[list[dict], list[dict]]:
+    """Laedt alle Plaene einmal. Liefert (sources, events)."""
+    sources: list[dict] = []
+    all_events: list[dict] = []
+    for url in urls:
+        try:
+            html = fetch_html(url)
+            evs = parse_all(html)
+        except requests.RequestException as exc:
+            # Einzelner Link nicht erreichbar (z.B. altes Semester offline):
+            # ueberspringen statt abbrechen. Ob die schon veroeffentlichten
+            # alten Termine erhalten bleiben, entscheidet der ICS-Schritt.
+            print(f"[ehb] WARN: {url} nicht erreichbar ({exc}) — uebersprungen.",
+                  file=sys.stderr)
+            sources.append({"url": url, "event_count": 0,
+                            "date_min": None, "date_max": None,
+                            "ok": False, "error": str(exc)})
+            continue
+        all_events.extend(evs)
+        dmin, dmax = date_span(evs)
+        # HTTP 200 mit 0 Events ist typischerweise eine WAF-/Block-Seite,
+        # kein legitimer Plan → nicht als erfolgreiche Quelle werten.
+        ok = len(evs) > 0
+        sources.append({"url": url, "event_count": len(evs),
+                        "date_min": dmin, "date_max": dmax, "ok": ok})
+        if ok:
+            print(f"[ehb] {url}: {len(evs)} Events ({dmin} … {dmax})", file=sys.stderr)
+        else:
+            print(f"[ehb] WARN: {url}: HTTP 200, aber 0 Events (WAF/Block?) — "
+                  "nicht als Quelle gewertet.", file=sys.stderr)
+    return sources, all_events
+
+
 def main() -> int:
     p = argparse.ArgumentParser(
         description=__doc__,
@@ -423,32 +463,16 @@ def main() -> int:
         )
     else:
         urls = args.url or [DEFAULT_URL]
-        for url in urls:
-            try:
-                html = fetch_html(url)
-                evs = parse_all(html)
-            except requests.RequestException as exc:
-                # Einzelner Link nicht erreichbar (z.B. altes Semester offline):
-                # ueberspringen statt abbrechen. Ob die schon veroeffentlichten
-                # alten Termine erhalten bleiben, entscheidet der ICS-Schritt.
-                print(f"[ehb] WARN: {url} nicht erreichbar ({exc}) — uebersprungen.",
-                      file=sys.stderr)
-                sources.append({"url": url, "event_count": 0,
-                                "date_min": None, "date_max": None,
-                                "ok": False, "error": str(exc)})
-                continue
-            all_events.extend(evs)
-            dmin, dmax = date_span(evs)
-            # HTTP 200 mit 0 Events ist typischerweise eine WAF-/Block-Seite,
-            # kein legitimer Plan → nicht als erfolgreiche Quelle werten.
-            ok = len(evs) > 0
-            sources.append({"url": url, "event_count": len(evs),
-                            "date_min": dmin, "date_max": dmax, "ok": ok})
-            if ok:
-                print(f"[ehb] {url}: {len(evs)} Events ({dmin} … {dmax})", file=sys.stderr)
-            else:
-                print(f"[ehb] WARN: {url}: HTTP 200, aber 0 Events (WAF/Block?) — "
-                      "nicht als Quelle gewertet.", file=sys.stderr)
+        # Kurze Stoerungen der EHB-Seite (SSL-Fehler, leere Block-Seite) treffen
+        # meist ALLE Links gleichzeitig und sind nach wenigen Minuten vorbei.
+        # Dann die ganze Runde wiederholen statt den Lauf scheitern zu lassen.
+        for wait in (*ROUND_WAITS, None):
+            sources, all_events = fetch_sources(urls)
+            if all_events or wait is None:
+                break
+            print(f"[ehb] WARN: alle Links ohne Events — neuer Versuch in {wait}s.",
+                  file=sys.stderr)
+            time.sleep(wait)
 
     events = dedup_and_sort(all_events)
 
